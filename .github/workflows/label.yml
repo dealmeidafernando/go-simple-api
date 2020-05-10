@@ -1,8 +1,7 @@
 name: Label approved pull requests
 
-on:
-  pull_request:
-    branches: [ master ]
+on: pull_request_review
+name: Label approved pull requests
 jobs:
   labelWhenApproved:
     name: Label when approved
@@ -14,4 +13,4 @@ jobs:
         APPROVALS: "1"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ADD_LABEL: "approved"
-        REMOVE_LABEL: "awaiting%20review"
+        REMOVE_LABEL: "waiting review"
