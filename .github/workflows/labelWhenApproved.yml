@@ -1,9 +1,11 @@
+name: Label approved pull requests
+
 on:
   pull_request:
     branches: [ master ]
 
-name: Label approved pull requests
 jobs:
+
   labelWhenApproved:
     name: Label when approved
     runs-on: ubuntu-latest
