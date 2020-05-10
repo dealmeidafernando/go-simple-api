@@ -1,4 +1,7 @@
-on: pull_request_review
+on:
+  pull_request:
+    branches: [ master ]
+
 name: Label approved pull requests
 jobs:
   labelWhenApproved:
