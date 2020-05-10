@@ -38,3 +38,10 @@ jobs:
     
     - name: Print console
       run: echo Hello, World!
+  
+  bla:
+    name: BlaBla
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Print console
+        run: echo Hello, World!
