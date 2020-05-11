@@ -11,7 +11,7 @@ func TestGetPeople(t *testing.T) {
 		w    http.ResponseWriter
 		r    *http.Request
 	}{
-		// test test aaaaabbbbadfdfsaf
+		// test test aaaaabbbbadfdfsafdsfdsfasdf
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
