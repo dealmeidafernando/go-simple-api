@@ -8,7 +8,7 @@ type Person struct {
 	Address   *Address `json:"address,omitempty"`
 }
 
-// Address ...
+// Address dafasdfdasfadsadsfadsfads...
 type Address struct {
 	City  string `json:"city,omitempty"`
 	State string `json:"state,omitempty"`
