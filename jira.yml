@@ -1,0 +1,12 @@
+name: 'Jira Ticket Assignment'
+on: pull_request
+
+jobs:
+  add-jira-ticket:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: smasala/jira-ticket-assigner@v1.0.1
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          jira-url: https://jirasoftware.catho.com.br/
+          project-prefix: BILL
