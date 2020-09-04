@@ -1,7 +1,7 @@
 name: jira-description-action
 on:
-  pull_request:
-    types: [opened, edited]
+- pull_request
+
 jobs:
   add-jira-description:
     runs-on: ubuntu-latest
