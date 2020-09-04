@@ -14,8 +14,7 @@ jobs:
         env:
           APPROVALS: "0"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ADD_LABEL: "approved"
-          REMOVE_LABEL: "thunderbolts"
+          ADD_LABEL: "thunderbolts"
       
       - name: Label when approved
         uses: pullreminders/label-when-approved-action@master
