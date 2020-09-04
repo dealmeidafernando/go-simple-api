@@ -5,13 +5,12 @@ on:
 
 name: Label thunderbolts
 jobs:
-  labelWhenApproved:
+  fasdfadsf:
     name: Label team
     runs-on: ubuntu-latest
     steps:
     - name: Label team
       uses: pullreminders/label-when-approved-action@master
       env:
-        APPROVALS: "0"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ADD_LABEL: "thunderbolts"
