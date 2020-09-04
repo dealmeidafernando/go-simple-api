@@ -1,12 +1,14 @@
-name: 'Jira Ticket Assignment'
-on: pull_request
-
+name: jira-description-action
+on:
+  pull_request:
+    types: [opened, edited]
 jobs:
-  add-jira-ticket:
+  add-jira-description:
     runs-on: ubuntu-latest
     steps:
-      - uses: smasala/jira-ticket-assigner@v1.0.1
+      - uses: cakeinpanic/jira-description-action@master
+        name: jira-description-action
         with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          jira-url: https://jirasoftware.catho.com.br/
-          project-prefix: BILL
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          jira-token: ${{ secrets.JIRA_TOKEN }}
+          jira-base-url: https://jirasoftware.catho.com.br
