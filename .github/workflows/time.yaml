@@ -12,6 +12,6 @@ jobs:
     - name: Label team
       uses: pullreminders/label-when-approved-action@master
       env:
-        APPROVALS: "0
+        APPROVALS: "0"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ADD_LABEL: "thunderbolts"
