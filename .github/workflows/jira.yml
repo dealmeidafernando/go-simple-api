@@ -12,3 +12,4 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           jira-token: ${{ secrets.JIRA_TOKEN }}
           jira-base-url: https://jirasoftware.catho.com.br
+          jira-project-name: 'BILL'
