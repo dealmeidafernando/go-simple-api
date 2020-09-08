@@ -10,6 +10,6 @@ jobs:
       - name: Add labels based on PR title
         uses: TDAK1509/set-label-based-on-pr-title@v1
         with:
-          words: word1;word2;word3
-          labels: label1;label2;label3
+          words: TB;feat;WIP
+          labels: TB;feat;InProgress
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
