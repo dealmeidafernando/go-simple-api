@@ -11,5 +11,5 @@ jobs:
         uses: TDAK1509/set-label-based-on-pr-title@v1
         with:
           words: TB;feat;WIP
-          labels: TB;feat;InProgress
+          labels: thunderbolts;feat;InProgress
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
