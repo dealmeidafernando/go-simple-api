@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add label on pull request
-        uses: dealmeidafernando/labeler@v0.2
+        uses: dealmeidafernando/labeler@v0.3
         with:
           label: approved
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
