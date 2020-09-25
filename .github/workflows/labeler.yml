@@ -1,15 +1,16 @@
-name: Auto filling pull request
+name: Add label on pull request
 on:
   pull_request:
     types: [opened]
 
 jobs:
-  auto-filling-pull-request:
+  Add-label-on-pull-request:
     runs-on: ubuntu-latest
     steps:
-      - name: Add labels based on PR title
-        uses: TDAK1509/set-label-based-on-pr-title@v1
+      - name: Add label on pull request
+        uses: dealmeidafernando/labeler@v0.11
         with:
-          words: TB;feat;WIP
-          labels: thunderbolts;feat;InProgress
+          team1: thunderbolts
+          membersTeam1: dealmeidafernando; dantunesd; lhkowalski-catho
+          labelTeam1: thunderbolts
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
