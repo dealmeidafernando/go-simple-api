@@ -11,6 +11,6 @@ jobs:
         uses: dealmeidafernando/labeler@v0.11
         with:
           team1: thunderbolts
-          membersTeam1: dealmeidafernando; dantunesd
+          membersTeam1: dealmeidafernando; dantunesd; lhkowalski-catho
           labelTeam1: thunderbolts
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
