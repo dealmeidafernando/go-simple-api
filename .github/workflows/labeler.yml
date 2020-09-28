@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add label on pull request
-        uses: dealmeidafernando/labeler@v0.11
+        uses: dealmeidafernando/labeler@v0.14
         with:
           team1: thunderbolts
           membersTeam1: dealmeidafernando; dantunesd; lhkowalski-catho
